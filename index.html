@@ -1,79 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate me! - haridass</title>
-    <link rel="icon" type="image/x-icon" href="Logo.avif">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="utils.css" rel="stylesheet" type="text/css" />
+    <link href="https://res.cloudinary.com/dpv2lnw8v/image/upload/v1705513718/IMG_20240117_221409_q2n1jl.jpg" rel="website icon" type="jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed_top">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aboutme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    
 
-    <div class="cal-outer-body">
-        <div class="cal-inner-body">
-            <h1 class="text-center">Welcome</h1>
-            <div class="container flex flex-col items-center">
-                <audio src="./sound-effect/click-sound.wav" id="click-sound"></audio>
 
-                <div class="row">
-                    <input type="text" class="input">
-                </div>
+    <div class="first_con">
+        <div class="container">
+            <div class="row">
 
-                <div class="row">
-                    <button class="button arithmetic">C</button>
-                    <button class="button arithmetic">%</button>
-                    <button class="button arithmetic">←</button>
-                    <button class="button arithmetic">*</button>
+                <div class="col-12 col-lg-5 m-2">
+                    <h1><span class="span_name">Hi There,</span> <br />I'm Haridass <br />I am a <span class="span_role">Full Stack Developer</span> </h1><br>
+                    <div>
+                        <div class="y text-center p-1 d-flex flex-row justify-content-center">
+                            <a href="https://www.linkedin.com/in/hari-dass" target="_blank"><img src="https://img.freepik.com/premium-vector/linkedin-app-icon-world-s-largest-professional-network-social-networking-jobs-careers_277909-476.jpg?w=740" class="n ml-3" /></a>
+                            <a href="" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2596/PNG/512/github_icon_155336.png" class="n ml-3" /></a>
 
-                </div>
-
-                <div class="row">
-                    <button class="button">7</button>
-                    <button class="button">8</button>
-                    <button class="button">9</button>
-                    <button class="button arithmetic">+</button>
-
-                </div>
-
-                <div class="row">
-                    <button class="button">4</button>
-                    <button class="button">5</button>
-                    <button class="button">6</button>
-                    <button class="button arithmetic">-</button>
-
-                </div>
-
-                <div class="row">
-                    <button class="button">1</button>
-                    <button class="button">2</button>
-                    <button class="button">3</button>
-                    <button class="button arithmetic">/</button>
-
-                </div>
-
-                <div class="row">
-                    <button class="button">00</button>
-                    <button class="button">0</button>
-                    <button class="button">.</button>
-                    <button class="button arithmetic">=</button>
+                        </div>
+                    </div>
 
                 </div>
 
-                <div class="history">
-                    <h2 class="historyHeadline">Calculation History <a class="clearHistory"
-                            title="Click to clear Calculation History">🗑</a></h2>
-                    <ul id="history-list"></ul>
+
+                <div class="col-12 col-lg-4">
+                    <img src="https://image.emojipng.com/173/5838173.jpg" class="first_img">
                 </div>
+
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+
+
+
+
+    <div class="second_con">
+        <div class="container">
+            <div class="row">
+
+
+                <h1 class="align col-12">About <span class="me">Me</span></h1>
+                <div class="d-flex flex-row justify-content-center pt-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-5 mt-4">
+                                <div class="my_img_con shadow-lg text-center p-2 ">
+                                    <img src="https://res.cloudinary.com/derqdwbsg/image/upload/v1697733355/IMG-20231019-WA0011_tuli3g.jpg" class="my_img" />
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <h1 class="para_top_head">I am p.Haridass</h1>
+                                <p class="para_head">Passionate Full Stack Developer | Machine Learning Enthusiast</p>
+                                <p class="para">Pre-final year ECE Undergraduate Student at Rajalakshmi Engineering College.
+                                    Leading India's fastest growing technical community of 10,000+ developers </p>
+                                <p class="para">Along with a wonderful team, I lead various projects, hackathons and communities. I am a self-taught developer with a passion for web development and problem solving. I have a strong background in software development and have worked on a wide variety of projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="third_con">
+        <div class="container">
+            <div class="row">
+                <h1 class="skill col-12">Skills & Abilities</h1>
+                <div class="col-6 col-lg-4 ">
+                    <img src="https://logos-download.com/wp-content/uploads/2017/07/HTML5_badge.png" class="w-100 h-100">
+                </div>
+
+                <div class="col-6 col-lg-4 ">
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/697/301/original/3d-css-icon-design-free-png.png" class="w-100 h-100">
+                </div>
+
+                <div class="col-6 col-lg-4 ">
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/697/297/original/3d-bootstrap-programming-framework-logo-free-png.png" class="w-100 h-100">
+                </div>
+
+
+                <div class="col-6 col-lg-4 ">
+                    <img src="https://skillforge.com/wp-content/uploads/2020/10/javascript.png" class="w-100 h-100">
+                </div>
+
+                <div class="col-6 col-lg-4 ">
+                    <img src="https://1.bp.blogspot.com/-Kzp15GYHhTM/VoP7xn9RCfI/AAAAAAAAAUE/6_kSXcw8FNs/s1600/sql.PNG" class="w-100 h-100">
+                </div>
+
+
+                <div class="col-6 col-lg-4 ">
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/697/295/non_2x/3d-python-programming-language-logo-free-png.png" class="w-100 h-100">
+                </div>
+
+
+                <div class="col-6 col-lg-4">
+                    <img src="https://alexeyza.com/assets/article_images/2015-09-28-getting-started-with-node-dot-js/nodejs.png" class="w-100 h-100">
+                </div>
+
+
+                <div class="col-6 col-lg-4">
+                    <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png" class="w-100 h-100">
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <section class="work" id="work">
+
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+        <div class="box-container">
+
+
+
+
+            <div class="box tilt mb-2">
+                <img draggable="false" src="https://lh3.googleusercontent.com/dtK3spmdiinZbSyEXPgQQMv97ORvP8c615P4nOAvNf3IB-cjo_HMrKJKzRR6BbCr2ls=h900" alt="" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Maths came</h3>
+                    </div>
+                    <div class="desc">
+                        <p>By using this game we can able to develop our maths knowledge</p>
+
+
+                        <div class="btns">
+                            <a href="https://github.com/SauravMukherjee44/Email-Classification-Model/blob/main/Model/email_classification.ipynb" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/SauravMukherjee44/Email-Classification-Model" class="btn" target="_blank"><i class="fas fa-code"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="box tilt mb-2">
+                <img draggable="false" src="https://www.cookingrevived.com/wp-content/uploads/2019/01/Cooking-Methods-Cooking-Revived.png" alt="" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Cooking lessons</h3>
+                    </div>
+                    <div class="desc">
+                        <p>By using this website we can learn cooking from the home it self </p>
+                        <div class="btns">
+                            <a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/SauravMukherjee44/Aec-Library-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="box tilt mb-2">
+                <img draggable="false" src="https://s3.amazonaws.com/images.ecwid.com/images/13261323/808798742.jpg" alt="" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Phone collections</h3>
+                    </div>
+                    <div class="desc">
+                        <p>By using my website we can able to buy a any kind phones like amazon</p>
+                        <div class="btns">
+                            <a href="https://codeincommunity.tech/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- work project section ends -->
+
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+
+        <h2 class="heading col-12 text-center pt-4"><i class="fas fa-headset"></i> Get in <span class="touch">Touch</span></h2>
+        <div class="container">
+            <div class="content">
+                <div class="image-box">
+                    <img draggable="false" src="https://cdn.dribbble.com/users/1124806/screenshots/9158801/media/351d703714f955dbc1e6e5275b080b53.jpg" alt="" class="cantact_img">
+                </div>
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <i class='fas fa-user'></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="email" placeholder="Email" required>
+                            <i class='fas fa-envelope'></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="phone" placeholder="Phone">
+                            <i class='fas fa-phone-alt'></i>
+                        </div>
+                        <div class="message">
+                            <textarea placeholder="Message" name="message" required></textarea>
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">
+                            Submit <i class="fa fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends -->
+
+
 </body>
 
 </html>
